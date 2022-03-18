@@ -1,0 +1,59 @@
+Here is where all the information for CSS help will reside in.
+
+Here is an example of in-line, internal and external CSS modification to styling of a website.
+
+<h1 style="text-align:right"> EXAMPLE # 1 </h1>
+
+(style="text-align:right") - CSS can be applied to in-line html code to style a specific part of the website, when styling in-line. It will always taken as it's main/priority style, this will be example further below.
+
+<style>
+ body{
+   background-color: #E0DDAA;
+ }
+
+ hr{
+   border-style: none;
+   border-top-style: dashed;
+   border-width: medium;
+   background-color: inherit;
+   border-color: #D1D1D1;
+   height: 5px;
+   border-width: 7.5px;
+   width: 25%;
+ }
+</style>
+
+Above, is where we call internal styling within the website, here is where you can manipulate styles within a section of a HTML page. This however does not affect other html styles across the several pages a website may have.
+This is where "External CSS" comes-in handy.
+
+Creating a CSS specific page, and applying the following below.
+
+body{
+  background-color: #E0DDAA;
+}
+
+hr{
+  border-style: none;
+  border-top-style: dashed;
+  border-width: medium;
+  background-color: inherit;
+  border-color: #D1D1D1;
+  height: 5px;
+  border-width: 7.5px;
+  width: 25%;
+}
+
+This will create the necessary features for styling across all pages.
+
+Class selectors specify the style of an html tag. Here is an example below
+
+
+<img class="Apple" src="https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/whatsapp/314/green-apple_1f34f.png" alt="Apple-img">
+
+Here is an <img> tag which has the following properties, "class", "src" and "alt"
+
+When the class attribute is used, you can give the tag unique properties using the "Class Selector" when styling in CSS below is an example of styling using a class.
+
+.Apple{
+  background-color: grey;
+}

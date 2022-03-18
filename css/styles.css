@@ -1,0 +1,55 @@
+body{
+  background-color: #F4BBBB;
+  margin: 0;
+}
+
+hr{
+  border-style: none;
+  border-top-style: dashed;
+  border-width: medium;
+  background-color: inherit;
+  border-color: #D1D1D1;
+  height: 5px;
+  border-width: 7.5px;
+  width: 25%;
+}
+
+h1{
+  color: #66BFBF
+}
+
+h3{
+  color: #66BFBF
+}
+
+                                                                                /* CLASS SELECTOR */
+
+.topbar{
+  margin: 0;
+  background-color: #F1E1A6;
+  position: relative;
+}
+
+.midbar{
+margin: 0;
+background-color: #97DBAE;
+position: relative;
+bottom: 25px;
+}
+
+.botbar{
+margin: 0;
+background-color: #F4BBBB;
+position: relative;
+bottom: 50px
+}
+
+.bio{
+    padding: 5px;
+}
+
+                                                                                /* ID's SELECTOR */
+
+#bio{
+  text-align: center;
+}
