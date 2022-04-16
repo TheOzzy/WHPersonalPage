@@ -1,22 +1,32 @@
-body{
-  margin: 0;
-  font-family: 'Signika', sans-serif;
+.container-fluid{
   text-align: center;
 }
 
-hr{
+.font-style{
+  font-family: "Montserrat", sans-serif;
+}
+
+.hr-style{
+  /* margin-left: 40%; */
+  text-align: center;
   border-style: none;
   border-top-style: dashed;
   border-width: medium;
   background-color: inherit;
   border-color: #D1D1D1;
-  height: 5px;
-  border-width: 7.5px;
-  width: 25%;
-  font-family: 'Nova Round', cursive;
 }
 
+.img-fluid{
+  max-width: 100%;
+}
+
+body{
+  text-align: center;
+}
+
+
 h1{
+  font-family: 'Acme', sans-serif;
   color: #66BFBF
 }
 
@@ -24,15 +34,46 @@ h3{
   color: #66BFBF
 }
 
-                                                                                /* CLASS SELECTOR */
-
-.top-container{
-  background-color: #FFFBE9;
+p{
+  text-align: center;
 }
 
+                                                                                /* CLASS SELECTOR */
+.top-container{
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,187,45,1) 100%);
+
+}
+
+.navbar{
+  padding: 0 0 4.5rem;
+}
+
+
+.navbar-nav{
+  padding-left: 18px;
+  padding-right: 18px;
+}
+
+.nav-bg{
+  background:#fdbb2d;
+}
+
+.navbar-brand{
+  font-family: 'Major Mono Display', monospace;
+}
+
+
+.intro{
+  text-align: center;
+  background: rgb(255,255,255);
+  background: linear-gradient(0deg, rgba(255,255,255,1) 0%, rgba(253,187,45,1) 100%);
+}
 .bio{
   width: 50%;
   margin: 10px auto;
+  padding-top: 0.1em;
+  padding-bottom: 0.1em;
 }
 
 .middle-container{
@@ -45,17 +86,18 @@ h3{
 }
 
 .skill-row{
-  width: 50%;
   margin: 100px auto 50px auto;
-  text-align: left;
+  text-align: center;
   line-height: 2;
 }
 
+
 .bottom-container{
   margin: 50px auto;
-  background-color: #FFFBE9;
+  background: rgb(253,187,45);
+  background: linear-gradient(0deg, rgba(253,187,45,1) 0%, rgba(255,255,255,1) 90%);
   margin-bottom: 0;
-  padding: 25px 0px 20px;
+  padding: 25px 0 20px;
 }
 
 .contact-message{
@@ -63,8 +105,6 @@ h3{
   margin: 40px auto 60px;
 }
 
-.contact-me{
-}
 
 .footer-link{
   word-spacing: 50px;
@@ -104,7 +144,7 @@ margin: 50px auto 0 auto;
 }
 
 .VersionControl{
-  background-color: #FFFBE9;
+  background-color: #fdbb2d;
   margin-bottom: 0;
   text-align: left;
 }
@@ -117,17 +157,20 @@ margin: 50px auto 0 auto;
 
 #skills-pic{
   border-radius: 100%;
-  width: 15%;
+  max-width: 15%;
   float: left;
   margin-right: 30px;
+  margin-top: 10px;
 }
 #coding-pic{
   border-radius: 15%;
-  width: 25%;
+  max-width: 25%;
   float:right;
   margin-left: 30px;
-  padding-top: 30px;
+  margin-top: 30px;
 }
+
+
 #CC{
   font-size: 0.75rem;
 }
