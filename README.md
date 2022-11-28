@@ -9,3 +9,6 @@ CSS Styling without a framework almost complete, I'm going to implement the foll
 
 #WHPersonalPage Updates 3.0
 Bootstrap Styling has been added to the redesigned website. New SPA design has be applied. Looking into apply SASS/SCSS implmentation.
+
+#WHPersonalPage Updates 3.1
+Landing page completed, with bootstrap styling and breakpoints applied for responsive design.
