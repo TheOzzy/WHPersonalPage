@@ -14,8 +14,6 @@ h1,h2,h3,h4,h5,h6 p {
 
 
 
-
-
                                                                                 /* CLASS SELECTOR */
                                                                                 /* OUTLINE OF THE WEBSITE */
 
@@ -64,6 +62,11 @@ h1,h2,h3,h4,h5,h6 p {
   object-position: center;
 }
 
+.circle-2T{
+  height: 300px;
+  width: 300px;
+}
+
 .project-circle,.project-circle-fill{
   width: 250px;
   height: 250px;
@@ -85,7 +88,13 @@ h1,h2,h3,h4,h5,h6 p {
 
 .img-circle{
   width: 100%; 
-  
+}
+
+/* // NEEDED FOR UPDATE// */
+
+.img-size{
+  width: 250px;
+  height: 250px;
 }
 
 .intro-title,.intro-job-detail{
@@ -126,7 +135,6 @@ h1,h2,h3,h4,h5,h6 p {
 
   .intro-grid-2{
     align-items: center;
-
   }
 
   .title{
@@ -137,7 +145,7 @@ h1,h2,h3,h4,h5,h6 p {
 
   .text{
     text-align: justify;
-    font-size: 18px;
+    text-align-last: center;
     line-height: 32.5px;
   }
 
@@ -275,6 +283,10 @@ h1,h2,h3,h4,h5,h6 p {
   margin-left: -10px;  
 }
 
+div .footer-icon{
+  background: transparent;
+}
+
 .footer-icon{
   width: 60px;
   height: 60px;
@@ -286,10 +298,86 @@ h1,h2,h3,h4,h5,h6 p {
   transition-duration: 0.4s;
 }
 
+
+
 .footer-icon:hover{
   opacity: 0.5;
 }
 
 .fib{
   width: 100%;
+}
+
+
+
+/* MEDIA QUERY SCREENSIZE MD */
+
+@media (max-width: 1099px){
+  .main-card{
+    background-color: white;
+    height: 2425px;
+    margin-bottom: 100px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+  }
+
+
+}
+
+@media (max-width: 972px){
+  .main-card{
+    background-color: white;
+    height: 3750px;
+    margin-bottom: 100px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+  }
+
+  .md-margin{
+    display: flex;
+    justify-content: center;
+  }
+
+  .footer-icon{
+    width: 45px;
+    height: 45px;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 30px;
+    margin: 10px;
+    transition-property: opacity;
+    transition-duration: 0.4s;
+  }
+
+}
+
+@media (max-width: 762px){
+  .main-card{
+    background-color: white;
+    height: 4475px;
+    margin-bottom: 100px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+  }
+
+}
+
+@media (max-width: 520px){
+  .main-card{
+    background-color: white;
+    height: 4000px;
+    margin-bottom: 100px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+  }
+}
+
+@media (max-width: 420px){
+  .main-card{
+    background-color: white;
+    height: 4750px;
+    margin-bottom: 100px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+  }
 }
