@@ -6,3 +6,9 @@ CSS Styling is now being applied changes to background colour and design will no
 
 #WHPersonalPage Updates 2.0
 CSS Styling without a framework almost complete, I'm going to implement the following framework "Bootstrap" as I continue to better my website. IT'S LOOKING GREAT SO FAR
+
+#WHPersonalPage Updates 3.0
+Bootstrap Styling has been added to the redesigned website. New SPA design has be applied. Looking into apply SASS/SCSS implmentation.
+
+#WHPersonalPage Updates 3.1
+Landing page completed, with bootstrap styling and breakpoints applied for responsive design.
