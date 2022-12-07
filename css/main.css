@@ -351,10 +351,10 @@ div .footer-icon{
 
 }
 
-@media (max-width: 762px){
+@media (max-width: 768px){
   .main-card{
     background-color: white;
-    height: 4475px;
+    height: 3775px;
     margin-bottom: 100px;
     border-end-end-radius: 10px;
     border-end-start-radius: 10px;
@@ -362,10 +362,30 @@ div .footer-icon{
 
 }
 
+@media (max-width: 640px){
+  .main-card{
+    background-color: white;
+    height: 4500px;
+    margin-bottom: 100px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+  }
+}
+
 @media (max-width: 520px){
   .main-card{
     background-color: white;
     height: 4000px;
+    margin-bottom: 100px;
+    border-end-end-radius: 10px;
+    border-end-start-radius: 10px;
+  }
+}
+
+@media (max-width: 480px){
+  .main-card{
+    background-color: white;
+    height: 4850px;
     margin-bottom: 100px;
     border-end-end-radius: 10px;
     border-end-start-radius: 10px;
