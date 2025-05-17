@@ -175,6 +175,7 @@ h1,h2,h3,h4,h5,h6 p {
 
 .project-text{
   color: black;
+  line-height: 30px;
   font-size: 18px;
   text-align: justify;
   text-align-last: center;
