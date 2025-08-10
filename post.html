@@ -1,0 +1,103 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="images/Favicon.png" type="favicon/x-icon" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/blog.css" />
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <title>Blog Post</title>
+  <!-- <style>
+    body { font-family: 'Poppins', sans-serif; }
+    header {
+      position: fixed; top: 0; left: 0; width: 100%;
+      z-index: 1000; padding: 0.5rem 0;
+      background-color: white; box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+      backdrop-filter: blur(10px);
+    }
+    main { padding-top: 8rem; }
+    nav i { color: black; }
+    nav strong { font-size: 2rem; }
+    .back-button { margin-bottom: 1rem; display: inline-block; }
+    .container-narrow { max-width: 860px; margin: 0 auto; padding: 0 1rem; }
+    article h1 { margin-bottom: 0.25rem; }
+    article small { color: #666; }
+    article .content { margin-top: 1rem; }
+  </style> -->
+</head>
+<body>
+  <!-- Navbar -->
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><strong>Blog Website</strong></li>
+        </ul>
+        <ul>
+          <li><a href="newIndex.html" aria-label="Home"><i class="fas fa-house"></i></a></li>
+          <li><a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+          <li><a href="https://linkedin.com/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container-narrow">
+    <a href="newIndex.html" class="back-button">← Back to Blog</a>
+    <article id="post-content">
+      <h1>Loading…</h1>
+    </article>
+  </main>
+
+  <script>
+    // Read the post ID from the URL: post.html?id=some-id
+    const params = new URLSearchParams(window.location.search);
+    const postId = params.get('id');
+
+    async function loadPost(id) {
+      try {
+        if (!id) throw new Error('No post id provided');
+
+        // 1) Load metadata list
+        const metaRes = await fetch('data/post.json');
+        if (!metaRes.ok) throw new Error('Cannot load metadata');
+        const meta = await metaRes.json();
+
+        // 2) Find the matching post entry by id
+        const entry = meta.find(p => p.id === id);
+        if (!entry || !entry.file) throw new Error('Post ID not found in metadata');
+
+        // 3) Load the actual post content from entry.file
+        const postRes = await fetch(entry.file);
+        if (!postRes.ok) throw new Error('Post file not found');
+        const post = await postRes.json();
+
+        // 4) Render the post (prefer fields from the content file, fall back to metadata)
+        const container = document.getElementById('post-content');
+        const title = post.title || entry.title || 'Untitled';
+        const date = post.date || entry.date || '';
+        const content = post.content || '<p>No content.</p>';
+        container.innerHTML = `
+          <h1>${title}</h1>
+          <small>${date ? new Date(date).toLocaleDateString() : ''}</small>
+          <div class="content">${content}</div>
+        `;
+      } catch (err) {
+        document.getElementById('post-content').innerHTML = `
+          <h1>Post not found</h1>
+          <p>We couldn't find the post you're looking for.</p>
+        `;
+        console.error(err);
+      }
+    }
+
+    loadPost(postId);
+  </script>
+</body>
+</html>
