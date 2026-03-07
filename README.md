@@ -12,3 +12,6 @@ Bootstrap Styling has been added to the redesigned website. New SPA design has b
 
 #WHPersonalPage Updates 3.1
 Landing page completed, with bootstrap styling and breakpoints applied for responsive design.
+
+#WHPersonalPage Updates 4.0
+Complete overhaul of design on website, currently trying multiple page design instead of single page. More updates to come
