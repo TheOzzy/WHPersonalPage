@@ -1,0 +1,76 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/Favicon.png" type="favicon/x-icon">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/blog.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <title>Blog</title>
+    
+</head>
+<body>
+    <header>
+      <div class="container">
+        <nav>
+            <ul>
+                <li><strong>Blog Website</strong></li>
+            </ul>
+            <ul>
+              <li><a href="index.html" aria-label="Home"><i class="fas fa-house"></i></a></li>
+              <li><a href="https://github.com/TheOzzy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a></li>
+              <li><a href="https://www.linkedin.com/in/warsame-hussein/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a></li>
+            </ul>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+  <!-- Introduction -->
+  <section class="intro">
+    <h1>Welcome to My Blog</h1>
+    <p>
+      Here, I share everyday moments, reflections, and lessons learned along the way.
+      You’ll find personal stories, small victories, challenges I’ve overcome, and the lessons hidden in daily life.
+      My aim is to capture both the extraordinary and the ordinary — the kind of moments that shape us, teach us, and sometimes make us laugh.
+      Dip into any post below — each title opens its own page, where I dive deeper into these experiences.
+    </p>
+  </section>
+
+  <!-- Blog Posts List -->
+  <section class="blog-list">
+    <article>
+        <h2>Recent Posts</h2>
+        <ul id="blog-list"></ul>
+    </article>
+  </section>
+</main>
+<script>
+(async function () {
+  try {
+    const res = await fetch('data/post.json');
+    const posts = await res.json();
+    const list = document.getElementById('blog-list');
+
+    // Sort newest first
+    posts.sort((a, b) => new Date(b.date) - new Date(a.date));
+
+    list.innerHTML = posts.map(p => `
+      <li>
+        <a href="post.html?id=${encodeURIComponent(p.id)}"><strong>${p.title}</strong></a>
+        <br><small>${new Date(p.date).toLocaleDateString()}</small>
+        ${p.excerpt ? `<p>${p.excerpt.substring(0, 216)}... <a href="post.html?id=${encodeURIComponent(p.id)}">See more</a></p>` : ''}
+      </li>
+    `).join('');
+  } catch (err) {
+    console.error('Error loading posts:', err);
+    const list = document.getElementById('blog-list');
+    if (list) list.innerHTML = '<li><em>Unable to load posts right now.</em></li>';
+  }
+})();
+</script>
+</body>
+</html>
