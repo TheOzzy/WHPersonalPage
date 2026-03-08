@@ -479,6 +479,12 @@ div .footer-icon{
   color: #562F00;
 }
 
+.landing-section-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #562F00;
+}
+
 .landing-section-alt{
   background-color: #FFCE99;
 }
