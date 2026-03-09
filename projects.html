@@ -1,156 +1,169 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="css/main.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="icon" type="image/png" href="images/Wumpa_fruit">
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/projects.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <link rel="icon" type="image/png" href="images/Wumpa_fruit">
 
-    <title>Projects</title>
+  <title>Projects</title>
 </head>
+
 <body class="landing-body page-fade">
 
-    <section class="landing-hero" style="min-height:auto;padding-top:0;padding-bottom:0;">
-        <header class="container-xxl landing-nav d-flex justify-content-between align-items-center py-4">
-            <div class="d-flex align-items-center">
-                <div class="landing-logo-circle d-flex align-items-center justify-content-center me-2">
-                    <a href="index.html"><img src="images/Wumpa_fruit" alt="Logo" class="landing-logo-img"></a>
-                </div>
+  <section class="landing-hero" style="min-height:auto;padding-top:0;padding-bottom:0;">
+    <header class="container-xxl landing-nav d-flex justify-content-between align-items-center py-4">
+      <div class="d-flex align-items-center">
+        <div class="landing-logo-circle d-flex align-items-center justify-content-center me-2">
+          <a href="index.html"><img src="images/Wumpa_fruit" alt="Logo" class="landing-logo-img"></a>
+        </div>
+      </div>
+
+      <nav>
+        <ul class="landing-menu list-unstyled d-flex align-items-center mb-0">
+          <li class="ms-4"><a href="index.html">Home</a></li>
+          <li class="ms-4"><a href="projects.html">Projects</a></li>
+          <!-- <li class="ms-4"><a href="blog.html">Blog</a></li> -->
+          <li class="ms-4"><a href="mailto:warsamehussein36@googlemail.com">Contact Me</a></li>
+        </ul>
+      </nav>
+    </header>
+  </section>
+
+  <main class="container-xxl py-5">
+    <header class="mb-5 text-center">
+      <h1 class="landing-title mb-3">Projects</h1>
+      <p class="landing-description m-auto">
+        A snapshot of the platform, DevOps, and automation work I’ve completed so far,
+        along with experiments that are currently in progress.
+      </p>
+    </header>
+
+
+    <!-- Completed projects -->
+    <section class="mb-5">
+
+      <h2 class="landing-section-title mb-4 text-center text-md-start">Completed Projects</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="landing-card h-100 position-relative landing-card-hoverable">
+
+            <div class="project-status-badge project-status-completed">Completed</div>
+
+            <div class="project-card-image mb-3">
+              <img src="images/domokitten.png" alt="OverTheWire Bandit levels 0 to 20" class="project-card-image-img">
             </div>
 
-            <nav>
-                <ul class="landing-menu list-unstyled d-flex align-items-center mb-0">
-                    <li class="ms-4"><a href="index.html">Home</a></li>
-                    <li class="ms-4"><a href="projects.html">Projects</a></li>
-                    <!-- <li class="ms-4"><a href="blog.html">Blog</a></li> -->
-                    <li class="ms-4"><a href="mailto:warsamehussein36@googlemail.com">Contact Me</a></li>
-                </ul>
-            </nav>
-        </header>
+            <h3 class="landing-card-title">
+              <a href="https://github.com/TheOzzy/MyDevOpsToolKit-WH/tree/main/Linux%20Basics/OverTheWire%20Bandit%20Levels%200-20"
+                target="_blank" class="text-decoration-none text-reset stretched-link">OverTheWire: Bandit (0–20)</a>
+            </h3>
+
+            <p class="landing-card-text mb-3">
+              Progressive Linux wargame focused on SSH, permissions, file handling, and basic
+              shell tooling to strengthen command-line fundamentals.
+            </p>
+
+            <p class="mb-0"><strong>Stack:</strong> Linux, SSH, Bash</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="landing-card h-100 position-relative landing-card-hoverable">
+
+            <div class="project-status-badge project-status-completed">Completed</div>
+
+            <div class="project-card-image mb-3">
+              <img src="images/BASH.webp" alt="Bash automation scripts" class="project-card-image-img">
+            </div>
+
+            <h3 class="landing-card-title">
+              <a href="https://github.com/TheOzzy/MyDevOpsToolKit-WH/tree/main/bashScripts" target="_blank"
+                class="text-decoration-none text-reset stretched-link">Bash Automation Scripts</a>
+            </h3>
+
+            <p class="landing-card-text mb-3">
+              Growing library of Bash utilities for automating repetitive server tasks such as
+              backups, log housekeeping, and environment bootstrap.
+            </p>
+
+            <p class="mb-0"><strong>Stack:</strong> Bash, Linux</p>
+
+          </div>
+
+        </div>
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="landing-card h-100 position-relative landing-card-hoverable">
+
+            <div class="project-status-badge project-status-completed">Completed</div>
+
+            <div class="project-card-image mb-3">
+              <img src="images/50four.png" alt="Nginx on EC2 with Route53" class="project-card-image-img">
+            </div>
+
+            <h3 class="landing-card-title">
+              <a href="https://www.fiftyfour.click" target="_blank"
+                class="text-decoration-none text-reset stretched-link">Fiftyfour – Nginx + EC2 + Route53</a>
+            </h3>
+
+            <p class="landing-card-text mb-3">
+              Personal infrastructure lab deploying an Nginx-backed site on AWS EC2 with
+              DNS managed via Route53 and room for future automation.
+            </p>
+
+            <p class="mb-0"><strong>Stack:</strong> Nginx, AWS EC2, Route53</p>
+
+          </div>
+
+        </div>
+
+      </div>
+
     </section>
 
-    <main class="container-xxl py-5">
-        <header class="mb-5 text-center">
-            <h1 class="landing-title mb-3">Projects</h1>
-            <p class="landing-description m-auto">
-                A snapshot of the platform, DevOps, and automation work I’ve completed so far,
-                along with experiments that are currently in progress.
+    <!-- Incomplete projects -->
+    <section>
+
+      <h2 class="landing-section-title mb-4 text-center text-md-start">In-Progress Projects</h2>
+
+      <div class="row g-4">
+
+        <div class="col-md-6 col-lg-4">
+
+          <div class="landing-card h-100" style="opacity: 0.6; filter: grayscale(80%); pointer-events: none;">
+
+            <div class="project-status-badge project-status-inprogress">In-Progress</div>
+
+            <div class="project-card-image mb-3">
+              <img src="images/SadServer.png" alt="SadServers easy scenarios" class="project-card-image-img">
+            </div>
+
+            <h3 class="landing-card-title">SadServers: Level [EASY]</h3>
+
+            <p class="landing-card-text mb-3">
+              Troubleshooting exercises on misconfigured Linux servers, practising real-world
+              debugging, log inspection, and quick fixes under time pressure.
             </p>
-        </header>
 
+            <p class="mb-0"><strong>Stack:</strong> Linux, Bash, troubleshooting</p>
 
-   <!-- Completed projects -->
-   <section class="mb-5">
-
-    <h2 class="landing-section-title mb-4 text-center text-md-start">Completed Projects</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-4">
-
-        <div class="landing-card h-100">
-
-          <div class="project-status-badge project-status-completed">Completed</div>
-
-          <div class="project-card-image mb-3">
-            <img src="images/domokitten.png" alt="OverTheWire Bandit levels 0 to 20" class="project-card-image-img">
           </div>
-
-          <h3 class="landing-card-title">OverTheWire: Bandit (0–20)</h3>
-
-          <p class="landing-card-text mb-3">
-            Progressive Linux wargame focused on SSH, permissions, file handling, and basic
-            shell tooling to strengthen command-line fundamentals.
-          </p>
-
-          <p class="mb-0"><strong>Stack:</strong> Linux, SSH, Bash</p>
 
         </div>
 
       </div>
 
-      <div class="col-md-6 col-lg-4">
-
-        <div class="landing-card h-100">
-
-          <div class="project-status-badge project-status-completed">Completed</div>
-
-          <div class="project-card-image mb-3">
-            <img src="images/BASH.webp" alt="Bash automation scripts" class="project-card-image-img">
-          </div>
-
-          <h3 class="landing-card-title">Bash Automation Scripts</h3>
-
-          <p class="landing-card-text mb-3">
-            Growing library of Bash utilities for automating repetitive server tasks such as
-            backups, log housekeeping, and environment bootstrap.
-          </p>
-
-          <p class="mb-0"><strong>Stack:</strong> Bash, Linux</p>
-
-        </div>
-
-      </div>
-
-      <div class="col-md-6 col-lg-4">
-
-        <div class="landing-card h-100">
-
-          <div class="project-status-badge project-status-completed">Completed</div>
-
-          <div class="project-card-image mb-3">
-            <img src="images/50four.png" alt="Nginx on EC2 with Route53" class="project-card-image-img">
-          </div>
-
-          <h3 class="landing-card-title">Fiftyfour – Nginx + EC2 + Route53</h3>
-
-          <p class="landing-card-text mb-3">
-            Personal infrastructure lab deploying an Nginx-backed site on AWS EC2 with
-            DNS managed via Route53 and room for future automation.
-          </p>
-
-          <p class="mb-0"><strong>Stack:</strong> Nginx, AWS EC2, Route53</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
-
-  <!-- Incomplete projects -->
-  <section>
-
-    <h2 class="landing-section-title mb-4 text-center text-md-start">In-Progress Projects</h2>
-
-    <div class="row g-4">
-
-      <div class="col-md-6 col-lg-4">
-
-        <div class="landing-card h-100">
-
-          <div class="project-status-badge project-status-inprogress">In-Progress</div>
-
-          <div class="project-card-image mb-3">
-            <img src="images/SadServer.png" alt="SadServers easy scenarios" class="project-card-image-img">
-          </div>
-
-          <h3 class="landing-card-title">SadServers: Level [EASY]</h3>
-
-          <p class="landing-card-text mb-3">
-            Troubleshooting exercises on misconfigured Linux servers, practising real-world
-            debugging, log inspection, and quick fixes under time pressure.
-          </p>
-
-          <p class="mb-0"><strong>Stack:</strong> Linux, Bash, troubleshooting</p>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
+    </section>

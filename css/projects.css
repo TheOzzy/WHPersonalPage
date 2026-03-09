@@ -1,0 +1,135 @@
+/* PROJECTS PAGE SPECIFIC STYLES */
+
+.landing-section{
+  padding: 60px 0;
+  background-color: #FFFDF1;
+  color: #562F00;
+}
+
+.landing-section-alt{
+  background-color: #FFCE99;
+}
+
+.landing-card{
+  background-color: #FFFDF1;
+  border-radius: 24px;
+  padding: 24px 24px 28px;
+  box-shadow: 0 10px 30px rgba(86,47,0,0.12);
+  height: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.landing-card-hoverable:hover{
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(86,47,0,0.25);
+}
+
+.project-status-badge{
+  display: inline-block;
+  padding: 4px 12px;
+  border-radius: 9999px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.project-status-started{
+  background-color: #F5D2D2;
+  color: #562F00;
+}
+
+.project-status-inprogress{
+  background-color: #F8F7BA;
+  color: #562F00;
+}
+
+.project-status-completed{
+  background-color: #BDE3C3;
+  color: #062814;
+}
+
+.project-status-experimental{
+  background-color: #A3CCDA;
+  color: #062130;
+}
+
+.project-card-image{
+  width: 100%;
+  border-radius: 18px;
+  overflow: hidden;
+}
+
+.project-card-image-img{
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+  display: block;
+}
+
+.landing-card-title{
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 10px;
+  color: #562F00;
+}
+
+.landing-card-text{
+  margin: 0;
+  font-size: 16px;
+}
+
+.landing-section-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #562F00;
+  margin-bottom: 12px;
+}
+
+.landing-section-subtitle{
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.landing-section-text{
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.landing-pill-list{
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.landing-pill{
+  padding: 8px 18px;
+  border-radius: 9999px;
+  border: 1px solid #562F00;
+  background-color: #FFFDF1;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+.landing-checklist{
+  list-style: none;
+  padding: 0;
+  margin: 16px 0 0;
+}
+
+.landing-check-item{
+  position: relative;
+  padding-left: 28px;
+  margin-bottom: 10px;
+}
+
+.landing-check-item::before{
+  content: "✔";
+  position: absolute;
+  left: 0;
+  top: 0;
+  color: #FF9644;
+  font-weight: 700;
+}
