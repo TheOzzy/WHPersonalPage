@@ -1,0 +1,16 @@
+[
+  {
+    "id": "post_1_2025_08_07",
+    "title": "The beginning of a new journey",
+    "date": "2025-08-07",
+    "excerpt": "It's hard to describe the feeling of excitement I have creating this blog page. I've always had a place to write my thoughts down, whether it was on the various different notebooks I've used throughout my life or the numerous different online note taking apps like, Evernote, Notion or even notepad on windows. They have been tools I've used and enjoyed using for many years now and hopefully many more years to come and yet, I feel as if they're not really my notes my words just a plaform shared by other people which doesn't seem right to me. I've wanted a place for my words my thoughts to be seen not only by me but those who are interested in what I do. So what is it I do, well as of now it's almost nothing. I work for a consultancy company where I don't even work as a consultant, I've been trying to get back into YouTube I have this really good series I'd like to work on based on a video game I've been playing for years, this idea of mine is sort of a pet project but I'd like it to be my proving ground for further video ediiting, I've also got a project I'm working on with my older brother creating a awesome beat em up. The game is inspired by castle crasher and right now it feels like we're just ripping off the game but I guess imitation is the best form of flattery. There's much more I'd like to talk about myself but you'll find out as I keep posting. Until next time.",
+    "file": "data/posts/the-beginning-of-a-new-journey.json"
+  },
+  {
+    "id": "post_2_2025_08_10",
+    "title": "The world of AI is changing, I need to catch up",
+    "date": "2025-08-10",
+    "excerpt": "The world of AI is changing, at a rapid rate, it feels as if the opportunities to make something great is slipping away from me each second, an idea I have has already been done by somebody and eveytime I think I’ve found something unique it turns out it’s already been done by somebody else. It’s frustrating and annoying. There is an idea, the personal assistant. I’m not talking about a chatbot where it takes prompts like questions and spits out an answer, I’m talking about an artificial companion, connected across different devices. In also every Sci-Fi movie/tv show and novel the idea of a somewhat sentient AI with it’s own thoughts and feelings (to a certain extent) would exist, conversations wouldn’t be straight forward as if you’re talking to Siri or Alexa but instead a more personable conversation as if you’re speaking to a work colleague, friend or even crew member on a ship. I’ve not got a name for this project or idea, that’ll have to come as I keep formulating this idea. The idea to walk into my office and speak, ask questions about project I’m working on and converse on what would or wouldn’t work sounds like complete Science Fiction but the more LLM’s and push towards advancing AI I think it’s just around the corner. More developments to come until then, I’ll have keep thinking 🤔💭",
+    "file": "data/posts/post2.json"
+  }
+]

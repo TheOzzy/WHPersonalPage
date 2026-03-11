@@ -1,17 +1,17 @@
-# WHPersonalPage
-Here will be my personal blog page. So far from the time this has been last updated this the page hasn't had much improvements it's only been coded in HTML with CSS and JavaScript being added in future. - 22/09/20
+# Next.js Supabase Blog Migration
 
-#WHPersonalPage Updates 1.0
-CSS Styling is now being applied changes to background colour and design will now begin, this is only to affect small cosmetic changes to the website 17/03/2022
+This project has been migrated from vanilla HTML/CSS to a Next.js application hooked into a Supabase Postgres backend.
 
-#WHPersonalPage Updates 2.0
-CSS Styling without a framework almost complete, I'm going to implement the following framework "Bootstrap" as I continue to better my website. IT'S LOOKING GREAT SO FAR
+## Instructions to Run
 
-#WHPersonalPage Updates 3.0
-Bootstrap Styling has been added to the redesigned website. New SPA design has be applied. Looking into apply SASS/SCSS implmentation.
+1. Open a terminal in this directory.
+2. Ensure you've initialized Node/npm using your preferred NVM layer (`nvm use 22`).
+3. Run `npm run dev` to start the Next.js development server.
+4. Visit `http://localhost:3000` in your browser.
 
-#WHPersonalPage Updates 3.1
-Landing page completed, with bootstrap styling and breakpoints applied for responsive design.
+## Supabase Database Setup
 
-#WHPersonalPage Updates 4.0
-Complete overhaul of design on website, currently trying multiple page design instead of single page. More updates to come
+For the dynamic blog parts to work correctly, you must go to your Supabase project dashboard, navigate to the **SQL Editor**, and run the SQL code inside `database_setup.sql`. This will:
+- Create the `posts` table
+- Enforce public rules (RLS) so only authenticated users (you) can make posts
+- Enforce rules so only `published` posts are viewable by everyone else.
